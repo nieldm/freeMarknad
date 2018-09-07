@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EnterAmountVC.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    EnterAmountVC *firstViewController = [[EnterAmountVC alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
