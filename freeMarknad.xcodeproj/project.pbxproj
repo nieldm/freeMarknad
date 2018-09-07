@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DF3BEB8F26C6B5D72ACBE66 /* libPods-freeMarknad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */; };
+		70F88C9BFAAF02681CF1A548 /* libPods-freeMarknadUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */; };
+		A14921A69F487D3FAC77DF58 /* libPods-freeMarknadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFDCD9315722AA7C2FF8CA /* libPods-freeMarknadTests.a */; };
+		B19E244121420A38002A7BBA /* BankSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E243421420A37002A7BBA /* BankSelectionVC.m */; };
+		B19E244221420A38002A7BBA /* EnterAmountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E243721420A37002A7BBA /* EnterAmountVC.m */; };
+		B19E244321420A38002A7BBA /* InstallmentSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E243A21420A37002A7BBA /* InstallmentSelectionVC.m */; };
+		B19E244421420A38002A7BBA /* PaymentMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E243D21420A37002A7BBA /* PaymentMethodVC.m */; };
+		B19E244521420A38002A7BBA /* TransactionResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E244021420A37002A7BBA /* TransactionResultVC.m */; };
 		B1ABCCE32141FB870046D735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCE22141FB870046D735 /* AppDelegate.m */; };
-		B1ABCCE62141FB870046D735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCE52141FB870046D735 /* ViewController.m */; };
-		B1ABCCE92141FB870046D735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1ABCCE72141FB870046D735 /* Main.storyboard */; };
 		B1ABCCEB2141FB870046D735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1ABCCEA2141FB870046D735 /* Assets.xcassets */; };
 		B1ABCCEE2141FB870046D735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1ABCCEC2141FB870046D735 /* LaunchScreen.storyboard */; };
 		B1ABCCF12141FB870046D735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCF02141FB870046D735 /* main.m */; };
@@ -35,12 +41,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A38A1CA43E7BE72A1935336 /* Pods-freeMarknadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadTests/Pods-freeMarknadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25BFDCD9315722AA7C2FF8CA /* libPods-freeMarknadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B03C92E44457367B86613B0 /* Pods-freeMarknad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknad/Pods-freeMarknad.debug.xcconfig"; sourceTree = "<group>"; };
+		3CE2C72B4CE71C5B0572E887 /* Pods-freeMarknadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadTests/Pods-freeMarknadTests.release.xcconfig"; sourceTree = "<group>"; };
+		40B757CCED1BE976536EA97F /* Pods-freeMarknadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6FDC34E3282C97D0C1761149 /* Pods-freeMarknadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		998A9999377B8621139733FF /* Pods-freeMarknad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknad.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknad/Pods-freeMarknad.release.xcconfig"; sourceTree = "<group>"; };
+		B19E243321420A37002A7BBA /* BankSelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankSelectionVC.h; sourceTree = "<group>"; };
+		B19E243421420A37002A7BBA /* BankSelectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankSelectionVC.m; sourceTree = "<group>"; };
+		B19E243621420A37002A7BBA /* EnterAmountVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAmountVC.h; sourceTree = "<group>"; };
+		B19E243721420A37002A7BBA /* EnterAmountVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAmountVC.m; sourceTree = "<group>"; };
+		B19E243921420A37002A7BBA /* InstallmentSelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstallmentSelectionVC.h; sourceTree = "<group>"; };
+		B19E243A21420A37002A7BBA /* InstallmentSelectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstallmentSelectionVC.m; sourceTree = "<group>"; };
+		B19E243C21420A37002A7BBA /* PaymentMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentMethodVC.h; sourceTree = "<group>"; };
+		B19E243D21420A37002A7BBA /* PaymentMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodVC.m; sourceTree = "<group>"; };
+		B19E243F21420A37002A7BBA /* TransactionResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionResultVC.h; sourceTree = "<group>"; };
+		B19E244021420A37002A7BBA /* TransactionResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionResultVC.m; sourceTree = "<group>"; };
 		B1ABCCDE2141FB870046D735 /* freeMarknad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freeMarknad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ABCCE12141FB870046D735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1ABCCE22141FB870046D735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B1ABCCE42141FB870046D735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B1ABCCE52141FB870046D735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B1ABCCE82141FB870046D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1ABCCEA2141FB870046D735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1ABCCED2141FB870046D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1ABCCEF2141FB870046D735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +71,8 @@
 		B1ABCD012141FB880046D735 /* freeMarknadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeMarknadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ABCD052141FB880046D735 /* freeMarknadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freeMarknadUITests.m; sourceTree = "<group>"; };
 		B1ABCD072141FB880046D735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF3BEB8F26C6B5D72ACBE66 /* libPods-freeMarknad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14921A69F487D3FAC77DF58 /* libPods-freeMarknadTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +96,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F88C9BFAAF02681CF1A548 /* libPods-freeMarknadUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CBD81DEFE1F734996721449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */,
+				25BFDCD9315722AA7C2FF8CA /* libPods-freeMarknadTests.a */,
+				C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B19E243121420A37002A7BBA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B19E243221420A37002A7BBA /* BankSelection */,
+				B19E243521420A37002A7BBA /* EnterAmount */,
+				B19E243821420A37002A7BBA /* InstallmentSelection */,
+				B19E243B21420A37002A7BBA /* PaymentMethod */,
+				B19E243E21420A37002A7BBA /* TransactionResult */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B19E243221420A37002A7BBA /* BankSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B19E243321420A37002A7BBA /* BankSelectionVC.h */,
+				B19E243421420A37002A7BBA /* BankSelectionVC.m */,
+			);
+			path = BankSelection;
+			sourceTree = "<group>";
+		};
+		B19E243521420A37002A7BBA /* EnterAmount */ = {
+			isa = PBXGroup;
+			children = (
+				B19E243621420A37002A7BBA /* EnterAmountVC.h */,
+				B19E243721420A37002A7BBA /* EnterAmountVC.m */,
+			);
+			path = EnterAmount;
+			sourceTree = "<group>";
+		};
+		B19E243821420A37002A7BBA /* InstallmentSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B19E243921420A37002A7BBA /* InstallmentSelectionVC.h */,
+				B19E243A21420A37002A7BBA /* InstallmentSelectionVC.m */,
+			);
+			path = InstallmentSelection;
+			sourceTree = "<group>";
+		};
+		B19E243B21420A37002A7BBA /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				B19E243C21420A37002A7BBA /* PaymentMethodVC.h */,
+				B19E243D21420A37002A7BBA /* PaymentMethodVC.m */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		B19E243E21420A37002A7BBA /* TransactionResult */ = {
+			isa = PBXGroup;
+			children = (
+				B19E243F21420A37002A7BBA /* TransactionResultVC.h */,
+				B19E244021420A37002A7BBA /* TransactionResultVC.m */,
+			);
+			path = TransactionResult;
+			sourceTree = "<group>";
+		};
 		B1ABCCD52141FB870046D735 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +177,8 @@
 				B1ABCCF92141FB880046D735 /* freeMarknadTests */,
 				B1ABCD042141FB880046D735 /* freeMarknadUITests */,
 				B1ABCCDF2141FB870046D735 /* Products */,
+				C5280AED4E57F3965051D9DC /* Pods */,
+				1CBD81DEFE1F734996721449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +197,11 @@
 			children = (
 				B1ABCCE12141FB870046D735 /* AppDelegate.h */,
 				B1ABCCE22141FB870046D735 /* AppDelegate.m */,
-				B1ABCCE42141FB870046D735 /* ViewController.h */,
-				B1ABCCE52141FB870046D735 /* ViewController.m */,
-				B1ABCCE72141FB870046D735 /* Main.storyboard */,
 				B1ABCCEA2141FB870046D735 /* Assets.xcassets */,
 				B1ABCCEC2141FB870046D735 /* LaunchScreen.storyboard */,
 				B1ABCCEF2141FB870046D735 /* Info.plist */,
 				B1ABCCF02141FB870046D735 /* main.m */,
+				B19E243121420A37002A7BBA /* ViewControllers */,
 			);
 			path = freeMarknad;
 			sourceTree = "<group>";
@@ -132,6 +224,19 @@
 			path = freeMarknadUITests;
 			sourceTree = "<group>";
 		};
+		C5280AED4E57F3965051D9DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B03C92E44457367B86613B0 /* Pods-freeMarknad.debug.xcconfig */,
+				998A9999377B8621139733FF /* Pods-freeMarknad.release.xcconfig */,
+				0A38A1CA43E7BE72A1935336 /* Pods-freeMarknadTests.debug.xcconfig */,
+				3CE2C72B4CE71C5B0572E887 /* Pods-freeMarknadTests.release.xcconfig */,
+				6FDC34E3282C97D0C1761149 /* Pods-freeMarknadUITests.debug.xcconfig */,
+				40B757CCED1BE976536EA97F /* Pods-freeMarknadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ABCD0A2141FB880046D735 /* Build configuration list for PBXNativeTarget "freeMarknad" */;
 			buildPhases = (
+				13008913E495E7AB21632244 /* [CP] Check Pods Manifest.lock */,
 				B1ABCCDA2141FB870046D735 /* Sources */,
 				B1ABCCDB2141FB870046D735 /* Frameworks */,
 				B1ABCCDC2141FB870046D735 /* Resources */,
@@ -156,6 +262,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ABCD0D2141FB880046D735 /* Build configuration list for PBXNativeTarget "freeMarknadTests" */;
 			buildPhases = (
+				FA440FC42A941271730A0F5F /* [CP] Check Pods Manifest.lock */,
 				B1ABCCF22141FB880046D735 /* Sources */,
 				B1ABCCF32141FB880046D735 /* Frameworks */,
 				B1ABCCF42141FB880046D735 /* Resources */,
@@ -174,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ABCD102141FB880046D735 /* Build configuration list for PBXNativeTarget "freeMarknadUITests" */;
 			buildPhases = (
+				E5E2FBF6D45358D2DD077485 /* [CP] Check Pods Manifest.lock */,
 				B1ABCCFD2141FB880046D735 /* Sources */,
 				B1ABCCFE2141FB880046D735 /* Frameworks */,
 				B1ABCCFF2141FB880046D735 /* Resources */,
@@ -240,7 +348,6 @@
 			files = (
 				B1ABCCEE2141FB870046D735 /* LaunchScreen.storyboard in Resources */,
 				B1ABCCEB2141FB870046D735 /* Assets.xcassets in Resources */,
-				B1ABCCE92141FB870046D735 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,13 +367,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13008913E495E7AB21632244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-freeMarknad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E2FBF6D45358D2DD077485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-freeMarknadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA440FC42A941271730A0F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-freeMarknadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1ABCCDA2141FB870046D735 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1ABCCE62141FB870046D735 /* ViewController.m in Sources */,
 				B1ABCCF12141FB870046D735 /* main.m in Sources */,
+				B19E244221420A38002A7BBA /* EnterAmountVC.m in Sources */,
+				B19E244421420A38002A7BBA /* PaymentMethodVC.m in Sources */,
+				B19E244121420A38002A7BBA /* BankSelectionVC.m in Sources */,
+				B19E244321420A38002A7BBA /* InstallmentSelectionVC.m in Sources */,
+				B19E244521420A38002A7BBA /* TransactionResultVC.m in Sources */,
 				B1ABCCE32141FB870046D735 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,14 +471,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B1ABCCE72141FB870046D735 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1ABCCE82141FB870046D735 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B1ABCCEC2141FB870046D735 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,11 +588,13 @@
 		};
 		B1ABCD0B2141FB880046D735 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B03C92E44457367B86613B0 /* Pods-freeMarknad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCD7YJUC25;
 				INFOPLIST_FILE = freeMarknad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrcddd.freeMarknad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +604,13 @@
 		};
 		B1ABCD0C2141FB880046D735 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 998A9999377B8621139733FF /* Pods-freeMarknad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCD7YJUC25;
 				INFOPLIST_FILE = freeMarknad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrcddd.freeMarknad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +620,7 @@
 		};
 		B1ABCD0E2141FB880046D735 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A38A1CA43E7BE72A1935336 /* Pods-freeMarknadTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +636,7 @@
 		};
 		B1ABCD0F2141FB880046D735 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE2C72B4CE71C5B0572E887 /* Pods-freeMarknadTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +652,7 @@
 		};
 		B1ABCD112141FB880046D735 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FDC34E3282C97D0C1761149 /* Pods-freeMarknadUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCD7YJUC25;
@@ -500,6 +667,7 @@
 		};
 		B1ABCD122141FB880046D735 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B757CCED1BE976536EA97F /* Pods-freeMarknadUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCD7YJUC25;
