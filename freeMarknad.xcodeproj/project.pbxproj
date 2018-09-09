@@ -28,6 +28,7 @@
 		B1ABCD062141FB880046D735 /* freeMarknadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCD052141FB880046D735 /* freeMarknadUITests.m */; };
 		B1FABA462145B06500BC1C1D /* freeMarknad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA442145B06500BC1C1D /* freeMarknad.xcdatamodeld */; };
 		B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA482145B4D300BC1C1D /* FMTransaction.m */; };
+		B1FABA4C2145C72200BC1C1D /* PaymentMethodViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA4B2145C72200BC1C1D /* PaymentMethodViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		B1FABA452145B06500BC1C1D /* freeMarknad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = freeMarknad.xcdatamodel; sourceTree = "<group>"; };
 		B1FABA472145B4D300BC1C1D /* FMTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMTransaction.h; sourceTree = "<group>"; };
 		B1FABA482145B4D300BC1C1D /* FMTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTransaction.m; sourceTree = "<group>"; };
+		B1FABA4A2145C72200BC1C1D /* PaymentMethodViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethodViewModel.h; sourceTree = "<group>"; };
+		B1FABA4B2145C72200BC1C1D /* PaymentMethodViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodViewModel.m; sourceTree = "<group>"; };
 		C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -195,6 +198,8 @@
 			children = (
 				B19E243C21420A37002A7BBA /* PaymentMethodVC.h */,
 				B19E243D21420A37002A7BBA /* PaymentMethodVC.m */,
+				B1FABA4A2145C72200BC1C1D /* PaymentMethodViewModel.h */,
+				B1FABA4B2145C72200BC1C1D /* PaymentMethodViewModel.m */,
 			);
 			path = PaymentMethod;
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */,
 				B1ABCCE32141FB870046D735 /* AppDelegate.m in Sources */,
 				B18CD2DF2145A07200C1916B /* MasterViewModel.m in Sources */,
+				B1FABA4C2145C72200BC1C1D /* PaymentMethodViewModel.m in Sources */,
 				B18CD2E22145A39900C1916B /* EnterAmountViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

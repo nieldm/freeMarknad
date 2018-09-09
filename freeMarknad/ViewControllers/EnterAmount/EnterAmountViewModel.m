@@ -14,6 +14,9 @@
 //View Controllers
 #import "../PaymentMethod/PaymentMethodVC.h"
 
+//View Models
+#import "../PaymentMethod/PaymentMethodViewModel.h"
+
 @interface EnterAmountViewModel ()
 
 @property (nonatomic, strong) FMTransaction *model;
@@ -29,6 +32,13 @@
     RACChannelTo(self, amount) = RACChannelTo(self.model, amount);
     
     return self;
+}
+
+- (PaymentMethodVC *)paymentMethod {
+    PaymentMethodVC *vc = [[PaymentMethodVC alloc] init];
+    PaymentMethodViewModel *viewModel = [[PaymentMethodViewModel alloc] initWithModel:self.model];
+    vc.viewModel = viewModel;
+    return vc;
 }
 
 @end

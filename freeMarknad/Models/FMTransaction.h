@@ -11,5 +11,6 @@
 @interface FMTransaction : NSManagedObject
 
 @property (nonatomic) float amount;
+@property (nonatomic, retain) NSString *paymentMethod;
 
 @end

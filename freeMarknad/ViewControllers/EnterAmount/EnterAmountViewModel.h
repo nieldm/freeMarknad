@@ -8,13 +8,15 @@
 
 #import "RVMViewModel.h"
 
-@class FMTransaction;
+@class FMTransaction, PaymentMethodVC;
 
 @interface EnterAmountViewModel : RVMViewModel
 
 @property (nonatomic, readonly) FMTransaction *model;
 
 @property (nonatomic) float amount;
+
+- (PaymentMethodVC *)paymentMethod;
 
 @end
 
