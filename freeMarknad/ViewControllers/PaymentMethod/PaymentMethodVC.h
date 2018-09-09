@@ -1,13 +1,9 @@
-//
-//  PaymentMethodVC.h
-//  freeMarknad
-//
-//  Created by nieldm on 9/6/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
+@class PaymentMethodViewModel;
+
 @interface PaymentMethodVC : UIViewController
+
+@property (nonatomic, strong) PaymentMethodViewModel *viewModel;
 
 @end
