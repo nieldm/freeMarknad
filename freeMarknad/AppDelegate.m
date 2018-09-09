@@ -1,13 +1,7 @@
-//
-//  AppDelegate.m
-//  freeMarknad
-//
-//  Created by nieldm on 9/6/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import "AppDelegate.h"
-#import "EnterAmountVC.h"
+#import "ViewControllers/MasterViewController.h"
+#import "ViewControllers/MasterViewModel.h"
+#import "FMCoreDataStack.h"
 
 @interface AppDelegate ()
 
@@ -18,10 +12,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    EnterAmountVC *firstViewController = [[EnterAmountVC alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
+    MasterViewController *masterViewController = [[MasterViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+    
+    MasterViewModel *viewModel = [[MasterViewModel alloc] initWithModel:[FMCoreDataStack defaultStack].managedObjectContext];
+    masterViewController.viewModel = viewModel;
 
     return YES;
 }
