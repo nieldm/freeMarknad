@@ -10,6 +10,11 @@
 		1DF3BEB8F26C6B5D72ACBE66 /* libPods-freeMarknad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */; };
 		70F88C9BFAAF02681CF1A548 /* libPods-freeMarknadUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */; };
 		A14921A69F487D3FAC77DF58 /* libPods-freeMarknadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFDCD9315722AA7C2FF8CA /* libPods-freeMarknadTests.a */; };
+		B18CD2DC21459FF300C1916B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2DB21459FF300C1916B /* MasterViewController.m */; };
+		B18CD2DF2145A07200C1916B /* MasterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2DE2145A07200C1916B /* MasterViewModel.m */; };
+		B18CD2E22145A39900C1916B /* EnterAmountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2E12145A39900C1916B /* EnterAmountViewModel.m */; };
+		B18CD2E62145A44300C1916B /* FMCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2E52145A44300C1916B /* FMCoreDataStack.m */; };
+		B18CD2E82145A57100C1916B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18CD2E72145A57100C1916B /* CoreData.framework */; };
 		B19E244121420A38002A7BBA /* BankSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E243421420A37002A7BBA /* BankSelectionVC.m */; };
 		B19E244221420A38002A7BBA /* EnterAmountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E243721420A37002A7BBA /* EnterAmountVC.m */; };
 		B19E244321420A38002A7BBA /* InstallmentSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E243A21420A37002A7BBA /* InstallmentSelectionVC.m */; };
@@ -21,6 +26,8 @@
 		B1ABCCF12141FB870046D735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCF02141FB870046D735 /* main.m */; };
 		B1ABCCFB2141FB880046D735 /* freeMarknadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCFA2141FB880046D735 /* freeMarknadTests.m */; };
 		B1ABCD062141FB880046D735 /* freeMarknadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCD052141FB880046D735 /* freeMarknadUITests.m */; };
+		B1FABA462145B06500BC1C1D /* freeMarknad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA442145B06500BC1C1D /* freeMarknad.xcdatamodeld */; };
+		B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA482145B4D300BC1C1D /* FMTransaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,16 @@
 		40B757CCED1BE976536EA97F /* Pods-freeMarknadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6FDC34E3282C97D0C1761149 /* Pods-freeMarknadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		998A9999377B8621139733FF /* Pods-freeMarknad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknad.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknad/Pods-freeMarknad.release.xcconfig"; sourceTree = "<group>"; };
+		B18CD2DA21459FF300C1916B /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B18CD2DB21459FF300C1916B /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B18CD2DD2145A07200C1916B /* MasterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewModel.h; sourceTree = "<group>"; };
+		B18CD2DE2145A07200C1916B /* MasterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewModel.m; sourceTree = "<group>"; };
+		B18CD2E02145A39900C1916B /* EnterAmountViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterAmountViewModel.h; sourceTree = "<group>"; };
+		B18CD2E12145A39900C1916B /* EnterAmountViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterAmountViewModel.m; sourceTree = "<group>"; };
+		B18CD2E42145A44300C1916B /* FMCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMCoreDataStack.h; sourceTree = "<group>"; };
+		B18CD2E52145A44300C1916B /* FMCoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMCoreDataStack.m; sourceTree = "<group>"; };
+		B18CD2E72145A57100C1916B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B18CD2E92145A5F100C1916B /* freeMarknad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "freeMarknad-Prefix.pch"; sourceTree = "<group>"; };
 		B19E243321420A37002A7BBA /* BankSelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankSelectionVC.h; sourceTree = "<group>"; };
 		B19E243421420A37002A7BBA /* BankSelectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankSelectionVC.m; sourceTree = "<group>"; };
 		B19E243621420A37002A7BBA /* EnterAmountVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAmountVC.h; sourceTree = "<group>"; };
@@ -71,6 +88,9 @@
 		B1ABCD012141FB880046D735 /* freeMarknadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeMarknadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ABCD052141FB880046D735 /* freeMarknadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freeMarknadUITests.m; sourceTree = "<group>"; };
 		B1ABCD072141FB880046D735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1FABA452145B06500BC1C1D /* freeMarknad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = freeMarknad.xcdatamodel; sourceTree = "<group>"; };
+		B1FABA472145B4D300BC1C1D /* FMTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMTransaction.h; sourceTree = "<group>"; };
+		B1FABA482145B4D300BC1C1D /* FMTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTransaction.m; sourceTree = "<group>"; };
 		C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18CD2E82145A57100C1916B /* CoreData.framework in Frameworks */,
 				1DF3BEB8F26C6B5D72ACBE66 /* libPods-freeMarknad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +127,7 @@
 		1CBD81DEFE1F734996721449 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B18CD2E72145A57100C1916B /* CoreData.framework */,
 				F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */,
 				25BFDCD9315722AA7C2FF8CA /* libPods-freeMarknadTests.a */,
 				C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */,
@@ -113,9 +135,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B18CD2ED2145AAED00C1916B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1FABA442145B06500BC1C1D /* freeMarknad.xcdatamodeld */,
+				B1FABA472145B4D300BC1C1D /* FMTransaction.h */,
+				B1FABA482145B4D300BC1C1D /* FMTransaction.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B19E243121420A37002A7BBA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B18CD2DA21459FF300C1916B /* MasterViewController.h */,
+				B18CD2DB21459FF300C1916B /* MasterViewController.m */,
+				B18CD2DD2145A07200C1916B /* MasterViewModel.h */,
+				B18CD2DE2145A07200C1916B /* MasterViewModel.m */,
 				B19E243221420A37002A7BBA /* BankSelection */,
 				B19E243521420A37002A7BBA /* EnterAmount */,
 				B19E243821420A37002A7BBA /* InstallmentSelection */,
@@ -139,6 +175,8 @@
 			children = (
 				B19E243621420A37002A7BBA /* EnterAmountVC.h */,
 				B19E243721420A37002A7BBA /* EnterAmountVC.m */,
+				B18CD2E02145A39900C1916B /* EnterAmountViewModel.h */,
+				B18CD2E12145A39900C1916B /* EnterAmountViewModel.m */,
 			);
 			path = EnterAmount;
 			sourceTree = "<group>";
@@ -197,10 +235,14 @@
 			children = (
 				B1ABCCE12141FB870046D735 /* AppDelegate.h */,
 				B1ABCCE22141FB870046D735 /* AppDelegate.m */,
+				B18CD2E42145A44300C1916B /* FMCoreDataStack.h */,
+				B18CD2E52145A44300C1916B /* FMCoreDataStack.m */,
 				B1ABCCEA2141FB870046D735 /* Assets.xcassets */,
 				B1ABCCEC2141FB870046D735 /* LaunchScreen.storyboard */,
 				B1ABCCEF2141FB870046D735 /* Info.plist */,
 				B1ABCCF02141FB870046D735 /* main.m */,
+				B18CD2E92145A5F100C1916B /* freeMarknad-Prefix.pch */,
+				B18CD2ED2145AAED00C1916B /* Models */,
 				B19E243121420A37002A7BBA /* ViewControllers */,
 			);
 			path = freeMarknad;
@@ -430,12 +472,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1ABCCF12141FB870046D735 /* main.m in Sources */,
+				B18CD2E62145A44300C1916B /* FMCoreDataStack.m in Sources */,
 				B19E244221420A38002A7BBA /* EnterAmountVC.m in Sources */,
 				B19E244421420A38002A7BBA /* PaymentMethodVC.m in Sources */,
 				B19E244121420A38002A7BBA /* BankSelectionVC.m in Sources */,
+				B18CD2DC21459FF300C1916B /* MasterViewController.m in Sources */,
+				B1FABA462145B06500BC1C1D /* freeMarknad.xcdatamodeld in Sources */,
 				B19E244321420A38002A7BBA /* InstallmentSelectionVC.m in Sources */,
 				B19E244521420A38002A7BBA /* TransactionResultVC.m in Sources */,
+				B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */,
 				B1ABCCE32141FB870046D735 /* AppDelegate.m in Sources */,
+				B18CD2DF2145A07200C1916B /* MasterViewModel.m in Sources */,
+				B18CD2E22145A39900C1916B /* EnterAmountViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +641,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCD7YJUC25;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/freeMarknad/freeMarknad-Prefix.pch";
 				INFOPLIST_FILE = freeMarknad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrcddd.freeMarknad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -609,11 +660,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCD7YJUC25;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/freeMarknad/freeMarknad-Prefix.pch";
 				INFOPLIST_FILE = freeMarknad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrcddd.freeMarknad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -720,6 +774,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B1FABA442145B06500BC1C1D /* freeMarknad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1FABA452145B06500BC1C1D /* freeMarknad.xcdatamodel */,
+			);
+			currentVersion = B1FABA452145B06500BC1C1D /* freeMarknad.xcdatamodel */;
+			path = freeMarknad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B1ABCCD62141FB870046D735 /* Project object */;
 }
