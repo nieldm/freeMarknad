@@ -48,8 +48,7 @@
     @weakify(self);
     [[_payButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton *button) {
         @strongify(self);
-
-        printf("CLICK!");
+        [self.navigationController pushViewController:[self.viewModel paymentMethod] animated:YES];
     }];
     
     [RACObserve(self.viewModel, amount) subscribeNext:^(id amount) {

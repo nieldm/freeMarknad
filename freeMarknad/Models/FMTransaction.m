@@ -11,5 +11,6 @@
 @implementation FMTransaction
 
 @dynamic amount;
+@dynamic paymentMethod;
 
 @end
