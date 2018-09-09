@@ -1,13 +1,22 @@
-//
-//  MasterViewModel.m
-//  freeMarknad
-//
-//  Created by Daniel Mendez on 9/9/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import "MasterViewModel.h"
 
+//Models
+#import "../Models/FMTransaction.h"
+
+//View Models
+#import "EnterAmount/EnterAmountViewModel.h"
+
+//View Controllers
+#import "EnterAmount/EnterAmountVC.h"
+
 @implementation MasterViewModel
+
+-(EnterAmountVC *)enterAmount {
+    FMTransaction *transaction = [NSEntityDescription insertNewObjectForEntityForName:@"FMTransaction" inManagedObjectContext:self.model];
+    EnterAmountViewModel *viewModel = [[EnterAmountViewModel alloc] initWithModel:transaction];
+    EnterAmountVC *vc = [[EnterAmountVC alloc] init];
+    vc.viewModel = viewModel;
+    return vc;
+}
 
 @end
