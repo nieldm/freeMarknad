@@ -8,6 +8,27 @@
 
 #import "EnterAmountViewModel.h"
 
+//Models
+#import "../../Models/FMTransaction.h"
+
+//View Controllers
+#import "../PaymentMethod/PaymentMethodVC.h"
+
+@interface EnterAmountViewModel ()
+
+@property (nonatomic, strong) FMTransaction *model;
+
+@end
+
 @implementation EnterAmountViewModel
+
+- (instancetype)initWithModel:(id)model {
+    self = [super initWithModel:model];
+    if (self == nil) return nil;
+
+    RACChannelTo(self, amount) = RACChannelTo(self.model, amount);
+    
+    return self;
+}
 
 @end

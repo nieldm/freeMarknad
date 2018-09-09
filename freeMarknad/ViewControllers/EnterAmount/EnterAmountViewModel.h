@@ -8,10 +8,13 @@
 
 #import "RVMViewModel.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@class FMTransaction;
 
 @interface EnterAmountViewModel : RVMViewModel
 
+@property (nonatomic, readonly) FMTransaction *model;
+
+@property (nonatomic) float amount;
+
 @end
 
-NS_ASSUME_NONNULL_END

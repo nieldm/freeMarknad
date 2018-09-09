@@ -1,5 +1,7 @@
 #import "EnterAmountVC.h"
-#import <Masonry.h>
+
+//View Models
+#import "EnterAmountViewModel.h"
 
 @interface EnterAmountVC ()
 
@@ -40,6 +42,20 @@
         make.centerX.equalTo(_amountTextField.mas_centerX);
         make.width.equalTo(_amountTextField.mas_width);
         make.height.mas_equalTo(45);
+    }];
+    
+    // Reactive Bindings
+    @weakify(self);
+    [[_payButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton *button) {
+        @strongify(self);
+
+        printf("CLICK!");
+    }];
+    
+    [RACObserve(self.viewModel, amount) subscribeNext:^(id amount) {
+        @strongify(self);
+        float floatValue = [amount floatValue];
+        self.amountTextField.text = [[NSNumber numberWithFloat:floatValue] stringValue];
     }];
 }
 

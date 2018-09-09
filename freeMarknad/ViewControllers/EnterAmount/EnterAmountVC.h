@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class EnterAmountViewModel;
+
 @interface EnterAmountVC : UIViewController
+
+@property (nonatomic, strong) EnterAmountViewModel *viewModel;
 
 @end
