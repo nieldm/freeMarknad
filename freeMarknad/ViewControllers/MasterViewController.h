@@ -1,17 +1,9 @@
-//
-//  MasterViewController.h
-//  freeMarknad
-//
-//  Created by Daniel Mendez on 9/9/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class MasterViewModel;
 
 @interface MasterViewController : UIViewController
 
-@end
+@property (nonatomic, strong) MasterViewModel *viewModel;
 
-NS_ASSUME_NONNULL_END
+@end
