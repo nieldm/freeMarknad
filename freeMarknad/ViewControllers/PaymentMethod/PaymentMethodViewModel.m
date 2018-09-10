@@ -1,7 +1,14 @@
 #import "PaymentMethodViewModel.h"
 
+//View controllers
+#import "../BankSelection/BankSelectionVC.h"
+
 //Models
 #import "../../Models/FMTransaction.h"
+#import "../../Models/MTLPaymentMethod.h"
+
+//API
+#import "../../Services/MercadoPagoAPI.h"
 
 @interface PaymentMethodViewModel ()
 
@@ -16,8 +23,26 @@
     if (self == nil) return nil;
     
     RACChannelTo(self, paymentMethod) = RACChannelTo(self.model, paymentMethod);
+    [[[MercadoPagoAPI sharedAPI] paymentMethods] subscribeNext:^(id response) {
+        self.results = [response filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id object, NSDictionary *bindings) {
+            MTLPaymentMethod *method = object;
+            return [method.paymentTypeId isEqual: @"credit_card"] &&
+                   [method.status isEqual: @"active"];
+        }]];
+    } error:^(NSError *error) {
+        
+    } completed:^{
+        
+    }];
     
     return self;
+}
+
+-(BankSelectionVC *)didSelect:(NSIndexPath *)indexPath {
+    MTLPaymentMethod *method = [self.results objectAtIndex:indexPath.row];
+    self.paymentMethod = method.id;
+    BankSelectionVC *vc = [[BankSelectionVC alloc] init];
+    return vc;
 }
 
 @end

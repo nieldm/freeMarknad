@@ -1,16 +1,12 @@
-//
-//  MercadoPagoAPI.m
-//  freeMarknad
-//
-//  Created by Daniel Mendez on 9/9/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
+#import <Mantle.h>
 
 #import "MercadoPagoAPI.h"
 
 #import "NetworkConstants.h"
 
 #import <AFNetworking.h>
+
+#import "../Models/MTLPaymentMethod.h"
 
 @implementation MercadoPagoAPI
 
@@ -35,10 +31,17 @@
              parameters:nil
                progress:nil
                 success:^(NSURLSessionTask *task, id responseObject) {
-                    NSLog(@"JSON: %@", responseObject);
+                    NSError *modelError = nil;
+                    NSArray *model = [MTLJSONAdapter modelsOfClass:MTLPaymentMethod.class fromJSONArray:responseObject error:&modelError];
+                    if (modelError == nil) {
+                        [subscriber sendNext:model];
+                        [subscriber sendCompleted];
+                    } else {
+                        [subscriber sendError:modelError];
+                    }
                 }
                 failure:^(NSURLSessionTask *operation, NSError *error) {
-                    NSLog(@"Error: %@", error);
+                    [subscriber sendError:error];
                 }
          ];
         return [RACDisposable disposableWithBlock:^{
