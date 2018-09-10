@@ -10,4 +10,8 @@
 
 @interface MercadoPagoAPI : NSObject
 
++ (MercadoPagoAPI *)sharedAPI;
+
+- (RACSignal *)paymentMethods;
+
 @end

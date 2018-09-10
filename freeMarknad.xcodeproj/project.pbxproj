@@ -10,6 +10,8 @@
 		1DF3BEB8F26C6B5D72ACBE66 /* libPods-freeMarknad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */; };
 		70F88C9BFAAF02681CF1A548 /* libPods-freeMarknadUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */; };
 		A14921A69F487D3FAC77DF58 /* libPods-freeMarknadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BFDCD9315722AA7C2FF8CA /* libPods-freeMarknadTests.a */; };
+		B14C8F8A214630B0002935E9 /* MercadoPagoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B14C8F89214630B0002935E9 /* MercadoPagoAPI.m */; };
+		B14C8F8D21463236002935E9 /* NetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B14C8F8C21463236002935E9 /* NetworkConstants.m */; };
 		B18CD2DC21459FF300C1916B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2DB21459FF300C1916B /* MasterViewController.m */; };
 		B18CD2DF2145A07200C1916B /* MasterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2DE2145A07200C1916B /* MasterViewModel.m */; };
 		B18CD2E22145A39900C1916B /* EnterAmountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2E12145A39900C1916B /* EnterAmountViewModel.m */; };
@@ -29,6 +31,7 @@
 		B1FABA462145B06500BC1C1D /* freeMarknad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA442145B06500BC1C1D /* freeMarknad.xcdatamodeld */; };
 		B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA482145B4D300BC1C1D /* FMTransaction.m */; };
 		B1FABA4C2145C72200BC1C1D /* PaymentMethodViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA4B2145C72200BC1C1D /* PaymentMethodViewModel.m */; };
+		B1FABA53214628BC00BC1C1D /* PaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA52214628BC00BC1C1D /* PaymentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,10 @@
 		40B757CCED1BE976536EA97F /* Pods-freeMarknadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6FDC34E3282C97D0C1761149 /* Pods-freeMarknadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		998A9999377B8621139733FF /* Pods-freeMarknad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknad.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknad/Pods-freeMarknad.release.xcconfig"; sourceTree = "<group>"; };
+		B14C8F88214630B0002935E9 /* MercadoPagoAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MercadoPagoAPI.h; sourceTree = "<group>"; };
+		B14C8F89214630B0002935E9 /* MercadoPagoAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MercadoPagoAPI.m; sourceTree = "<group>"; };
+		B14C8F8B21463236002935E9 /* NetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConstants.h; sourceTree = "<group>"; };
+		B14C8F8C21463236002935E9 /* NetworkConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkConstants.m; sourceTree = "<group>"; };
 		B18CD2DA21459FF300C1916B /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		B18CD2DB21459FF300C1916B /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		B18CD2DD2145A07200C1916B /* MasterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewModel.h; sourceTree = "<group>"; };
@@ -94,6 +101,8 @@
 		B1FABA482145B4D300BC1C1D /* FMTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTransaction.m; sourceTree = "<group>"; };
 		B1FABA4A2145C72200BC1C1D /* PaymentMethodViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethodViewModel.h; sourceTree = "<group>"; };
 		B1FABA4B2145C72200BC1C1D /* PaymentMethodViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodViewModel.m; sourceTree = "<group>"; };
+		B1FABA51214628BC00BC1C1D /* PaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentService.h; sourceTree = "<group>"; };
+		B1FABA52214628BC00BC1C1D /* PaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentService.m; sourceTree = "<group>"; };
 		C4D6909551CDA1EC8D2630CE /* libPods-freeMarknadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-freeMarknad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -249,6 +258,7 @@
 				B18CD2E92145A5F100C1916B /* freeMarknad-Prefix.pch */,
 				B18CD2ED2145AAED00C1916B /* Models */,
 				B19E243121420A37002A7BBA /* ViewControllers */,
+				B1FABA50214628BC00BC1C1D /* Services */,
 			);
 			path = freeMarknad;
 			sourceTree = "<group>";
@@ -269,6 +279,19 @@
 				B1ABCD072141FB880046D735 /* Info.plist */,
 			);
 			path = freeMarknadUITests;
+			sourceTree = "<group>";
+		};
+		B1FABA50214628BC00BC1C1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1FABA51214628BC00BC1C1D /* PaymentService.h */,
+				B1FABA52214628BC00BC1C1D /* PaymentService.m */,
+				B14C8F88214630B0002935E9 /* MercadoPagoAPI.h */,
+				B14C8F89214630B0002935E9 /* MercadoPagoAPI.m */,
+				B14C8F8B21463236002935E9 /* NetworkConstants.h */,
+				B14C8F8C21463236002935E9 /* NetworkConstants.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C5280AED4E57F3965051D9DC /* Pods */ = {
@@ -483,11 +506,14 @@
 				B19E244121420A38002A7BBA /* BankSelectionVC.m in Sources */,
 				B18CD2DC21459FF300C1916B /* MasterViewController.m in Sources */,
 				B1FABA462145B06500BC1C1D /* freeMarknad.xcdatamodeld in Sources */,
+				B14C8F8A214630B0002935E9 /* MercadoPagoAPI.m in Sources */,
 				B19E244321420A38002A7BBA /* InstallmentSelectionVC.m in Sources */,
 				B19E244521420A38002A7BBA /* TransactionResultVC.m in Sources */,
 				B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */,
+				B1FABA53214628BC00BC1C1D /* PaymentService.m in Sources */,
 				B1ABCCE32141FB870046D735 /* AppDelegate.m in Sources */,
 				B18CD2DF2145A07200C1916B /* MasterViewModel.m in Sources */,
+				B14C8F8D21463236002935E9 /* NetworkConstants.m in Sources */,
 				B1FABA4C2145C72200BC1C1D /* PaymentMethodViewModel.m in Sources */,
 				B18CD2E22145A39900C1916B /* EnterAmountViewModel.m in Sources */,
 			);

@@ -1,13 +1,9 @@
-//
-//  PaymentService.m
-//  freeMarknad
-//
-//  Created by Daniel Mendez on 9/9/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import "PaymentService.h"
 
 @implementation PaymentService
+
++ (NSString *)paymentMethod:(NSString *)token {
+    return [NSString stringWithFormat: @"https://api.mercadopago.com/v1/payment_methods?public_key=%@", token];
+}
 
 @end
