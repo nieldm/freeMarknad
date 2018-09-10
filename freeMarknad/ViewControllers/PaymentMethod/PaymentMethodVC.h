@@ -2,7 +2,7 @@
 
 @class PaymentMethodViewModel;
 
-@interface PaymentMethodVC : UIViewController
+@interface PaymentMethodVC : UIViewController<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) PaymentMethodViewModel *viewModel;
 
