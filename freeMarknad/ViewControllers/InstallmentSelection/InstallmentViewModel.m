@@ -1,8 +1,15 @@
 #import "InstallmentViewModel.h"
 
+//View Controllers
+#import "../TransactionResult/TransactionResultVC.h"
+
+//View Models
+#import "../TransactionResult/TransactionViewModel.h"
+
 //Models
 #import "../../Models/FMTransaction.h"
 #import "../../Models/FromService/MTLPaymentMethod.h"
+#import "../../Models/FromService/MTLInstallment.h"
 
 //API
 #import "../../Services/MercadoPagoAPI.h"
@@ -18,6 +25,17 @@
     }];
     
     return self;
+}
+
+-(TransactionResultVC *)didSelect:(NSIndexPath *)indexPath {
+    MTLInstallment *installment = [self.results objectAtIndex:indexPath.row];
+    self.model.installmentAmount = installment.installmentAmount;
+    self.model.numberOfInstallments = [[NSNumber numberWithLong:installment.numberOfInstallments] floatValue];
+    self.model.installmentMessage = installment.recommendedMessage;
+    TransactionViewModel *viewModel = [[TransactionViewModel alloc] initWithModel:self.model];
+    TransactionResultVC *vc = [[TransactionResultVC alloc] init];
+    vc.viewModel = viewModel;
+    return vc;
 }
 
 @end

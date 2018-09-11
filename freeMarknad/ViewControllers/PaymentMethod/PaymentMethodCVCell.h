@@ -13,5 +13,6 @@
 @interface PaymentMethodCVCell : UICollectionViewCell
 
 - (void)setData:(MTLPaymentMethod *)data;
+- (void)setBank:(NSString *)iconUrl;
 
 @end

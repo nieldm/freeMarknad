@@ -14,8 +14,8 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.viewModel.active = YES;
-    
-    [self.navigationController pushViewController:[self.viewModel enterAmount] animated:YES];
+    UIViewController *vc = (UIViewController *) [self.viewModel enterAmount];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

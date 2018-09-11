@@ -58,10 +58,10 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-//    UIViewController *vc = [self.viewModel didSelect:indexPath];
-//    if (vc != nil) {
-//        [self.navigationController pushViewController:vc animated:YES];
-//    }
+    UIViewController *vc = (UIViewController *) [self.viewModel didSelect:indexPath];
+    if (vc != nil) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end
