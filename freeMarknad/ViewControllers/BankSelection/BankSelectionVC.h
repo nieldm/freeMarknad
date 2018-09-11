@@ -1,13 +1,9 @@
-//
-//  BankSelectionVC.h
-//  freeMarknad
-//
-//  Created by nieldm on 9/6/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
-@interface BankSelectionVC : UIViewController
+#import "BankSelectionViewModel.h"
+
+@interface BankSelectionVC : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) BankSelectionViewModel *viewModel;
 
 @end

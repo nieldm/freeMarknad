@@ -4,7 +4,7 @@
 
 #import "PaymentMethodCVCell.h"
 
-#import "../../Models/MTLPaymentMethod.h"
+#import "../../Models/FromService/MTLPaymentMethod.h"
 
 @interface PaymentMethodVC ()
 
