@@ -15,16 +15,8 @@
 
 - (void)setData:(MTLInstallment *)data {
     self.installmentsLabel.text = (data.numberOfInstallments > 1) ? @"cuotas" : @"cuota";
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    NSString *groupingSeparator = [[NSLocale currentLocale] objectForKey:NSLocaleGroupingSeparator];
-    [formatter setGroupingSeparator:groupingSeparator];
-    [formatter setGroupingSize:3];
-    [formatter setAlwaysShowsDecimalSeparator:NO];
-    [formatter setUsesGroupingSeparator:YES];
-    [formatter setCurrencySymbol:nil];
     self.topLeftLabel.text = [[NSNumber numberWithLong:data.numberOfInstallments] stringValue];
-    self.topRightLabel.text = [formatter stringFromNumber:[NSNumber numberWithFloat:data.installmentAmount]];
+    self.topRightLabel.text = [[NSNumber numberWithFloat:data.installmentAmount] currency];
     self.bottomCenterLabel.text = data.recommendedMessage;
 }
 

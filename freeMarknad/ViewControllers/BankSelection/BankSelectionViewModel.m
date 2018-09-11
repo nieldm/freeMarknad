@@ -34,6 +34,7 @@
     MTLBank *bank = [self.results objectAtIndex:indexPath.section];
     self.model.bankId = bank.id;
     self.model.bankName = bank.name;
+    self.model.bankIcon = bank.thumbnail;
     InstallmentViewModel *viewModel = [[InstallmentViewModel alloc] initWithModel:self.model];
     InstallmentSelectionVC *vc = [[InstallmentSelectionVC alloc] init];
     vc.viewModel = viewModel;

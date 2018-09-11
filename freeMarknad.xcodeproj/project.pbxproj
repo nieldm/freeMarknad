@@ -24,6 +24,8 @@
 		B1ABCCEB2141FB870046D735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1ABCCEA2141FB870046D735 /* Assets.xcassets */; };
 		B1ABCCEE2141FB870046D735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1ABCCEC2141FB870046D735 /* LaunchScreen.storyboard */; };
 		B1ABCCF12141FB870046D735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCF02141FB870046D735 /* main.m */; };
+		B1C0A6FF2148250D00AE8BAD /* TransactionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C0A6FE2148250D00AE8BAD /* TransactionViewModel.m */; };
+		B1C0A70221482CF500AE8BAD /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C0A70121482CF500AE8BAD /* NSNumber+Format.m */; };
 		B1EA86C421471FBB0004CCCE /* PaymentMethodCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86C221471FBB0004CCCE /* PaymentMethodCVCell.m */; };
 		B1EA86C521471FBB0004CCCE /* PaymentMethodCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EA86C321471FBB0004CCCE /* PaymentMethodCVCell.xib */; };
 		B1EA86C821476F420004CCCE /* BankSelectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86C721476F420004CCCE /* BankSelectionViewModel.m */; };
@@ -80,6 +82,10 @@
 		B1ABCCED2141FB870046D735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1ABCCEF2141FB870046D735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1ABCCF02141FB870046D735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1C0A6FD2148250D00AE8BAD /* TransactionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionViewModel.h; sourceTree = "<group>"; };
+		B1C0A6FE2148250D00AE8BAD /* TransactionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionViewModel.m; sourceTree = "<group>"; };
+		B1C0A70021482CF500AE8BAD /* NSNumber+Format.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Format.h"; sourceTree = "<group>"; };
+		B1C0A70121482CF500AE8BAD /* NSNumber+Format.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Format.m"; sourceTree = "<group>"; };
 		B1EA86C121471FBB0004CCCE /* PaymentMethodCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethodCVCell.h; sourceTree = "<group>"; };
 		B1EA86C221471FBB0004CCCE /* PaymentMethodCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodCVCell.m; sourceTree = "<group>"; };
 		B1EA86C321471FBB0004CCCE /* PaymentMethodCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodCVCell.xib; sourceTree = "<group>"; };
@@ -219,6 +225,8 @@
 			children = (
 				B19E243F21420A37002A7BBA /* TransactionResultVC.h */,
 				B19E244021420A37002A7BBA /* TransactionResultVC.m */,
+				B1C0A6FD2148250D00AE8BAD /* TransactionViewModel.h */,
+				B1C0A6FE2148250D00AE8BAD /* TransactionViewModel.m */,
 			);
 			path = TransactionResult;
 			sourceTree = "<group>";
@@ -256,6 +264,8 @@
 				B18CD2ED2145AAED00C1916B /* Models */,
 				B19E243121420A37002A7BBA /* ViewControllers */,
 				B1FABA50214628BC00BC1C1D /* Services */,
+				B1C0A70021482CF500AE8BAD /* NSNumber+Format.h */,
+				B1C0A70121482CF500AE8BAD /* NSNumber+Format.m */,
 			);
 			path = freeMarknad;
 			sourceTree = "<group>";
@@ -405,6 +415,8 @@
 				B14C8F8A214630B0002935E9 /* MercadoPagoAPI.m in Sources */,
 				B19E244321420A38002A7BBA /* InstallmentSelectionVC.m in Sources */,
 				B19E244521420A38002A7BBA /* TransactionResultVC.m in Sources */,
+				B1C0A70221482CF500AE8BAD /* NSNumber+Format.m in Sources */,
+				B1C0A6FF2148250D00AE8BAD /* TransactionViewModel.m in Sources */,
 				B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */,
 				B1EA86C821476F420004CCCE /* BankSelectionViewModel.m in Sources */,
 				B1FABA53214628BC00BC1C1D /* PaymentService.m in Sources */,
