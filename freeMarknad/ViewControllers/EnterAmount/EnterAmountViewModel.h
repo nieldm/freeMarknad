@@ -16,7 +16,7 @@
 
 @property (nonatomic) float amount;
 
-- (PaymentMethodVC *)paymentMethod;
+- (PaymentMethodVC *)paymentMethodWithAmount: (NSString *)rawAmount;
 
 @end
 

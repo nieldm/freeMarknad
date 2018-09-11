@@ -2,9 +2,11 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="FMTransaction" representedClassName="FMTransaction" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bankId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bankName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="paymentMethod" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="FMTransaction" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="FMTransaction" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

@@ -3,6 +3,9 @@
 //View Controllers
 #import "../InstallmentSelection/InstallmentSelectionVC.h"
 
+//View Models
+#import "../InstallmentSelection/InstallmentViewModel.h"
+
 //Models
 #import "../../Models/FMTransaction.h"
 #import "../../Models/FromService/MTLBank.h"
@@ -31,9 +34,9 @@
     MTLBank *bank = [self.results objectAtIndex:indexPath.section];
     self.model.bankId = bank.id;
     self.model.bankName = bank.name;
-//    BankSelectionViewModel *viewModel = [[BankSelectionViewModel alloc] initWithModel:self.model];
+    InstallmentViewModel *viewModel = [[InstallmentViewModel alloc] initWithModel:self.model];
     InstallmentSelectionVC *vc = [[InstallmentSelectionVC alloc] init];
-//    vc.viewModel = viewModel;
+    vc.viewModel = viewModel;
     return vc;
 }
 

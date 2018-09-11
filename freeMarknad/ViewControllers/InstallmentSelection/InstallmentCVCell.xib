@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InstallmentCVCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="161"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="161"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$250,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byc-kP-egF">
+                        <rect key="frame" x="190" y="15" width="188" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zav-rb-jgM">
+                        <rect key="frame" x="15" y="15" width="45" height="84"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtu-bT-sJ1">
+                        <rect key="frame" x="19.5" y="125.5" width="354" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coutas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-DG-vn9">
+                        <rect key="frame" x="60" y="69.5" width="41" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zav-rb-jgM" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" constant="15" id="4Im-4M-vJo"/>
+                <constraint firstItem="xtu-bT-sJ1" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="LVQ-wU-0zi"/>
+                <constraint firstItem="Zav-rb-jgM" firstAttribute="top" secondItem="Byc-kP-egF" secondAttribute="top" id="MKw-jL-BoR"/>
+                <constraint firstItem="Byc-kP-egF" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" constant="15" id="SEC-uB-4qj"/>
+                <constraint firstItem="vVH-DG-vn9" firstAttribute="baseline" secondItem="Zav-rb-jgM" secondAttribute="baseline" id="YHY-hc-cuw"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="xtu-bT-sJ1" secondAttribute="bottom" constant="15" id="i3N-g7-qrM"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="Byc-kP-egF" secondAttribute="trailing" constant="15" id="kO0-7w-x1S"/>
+                <constraint firstItem="vVH-DG-vn9" firstAttribute="leading" secondItem="Zav-rb-jgM" secondAttribute="trailing" id="qAK-1q-fAs"/>
+                <constraint firstItem="xtu-bT-sJ1" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.9" id="qyY-4G-jlD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="393" height="161"/>
+            <connections>
+                <outlet property="bottomCenterLabel" destination="xtu-bT-sJ1" id="kRC-xL-zeU"/>
+                <outlet property="installmentsLabel" destination="vVH-DG-vn9" id="f4u-Xb-Ts9"/>
+                <outlet property="topLeftLabel" destination="Zav-rb-jgM" id="xAz-uT-1vz"/>
+                <outlet property="topRightLabel" destination="Byc-kP-egF" id="VhS-zW-Pmb"/>
+            </connections>
+            <point key="canvasLocation" x="-151" y="16"/>
+        </collectionViewCell>
+    </objects>
+</document>
