@@ -3,9 +3,12 @@
 //View controllers
 #import "../BankSelection/BankSelectionVC.h"
 
+//View Models
+#import "../BankSelection/BankSelectionViewModel.h"
+
 //Models
 #import "../../Models/FMTransaction.h"
-#import "../../Models/MTLPaymentMethod.h"
+#import "../../Models/FromService/MTLPaymentMethod.h"
 
 //API
 #import "../../Services/MercadoPagoAPI.h"
@@ -41,7 +44,9 @@
 -(BankSelectionVC *)didSelect:(NSIndexPath *)indexPath {
     MTLPaymentMethod *method = [self.results objectAtIndex:indexPath.row];
     self.paymentMethod = method.id;
+    BankSelectionViewModel *viewModel = [[BankSelectionViewModel alloc] initWithModel:self.model];
     BankSelectionVC *vc = [[BankSelectionVC alloc] init];
+    vc.viewModel = viewModel;
     return vc;
 }
 

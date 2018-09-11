@@ -1,14 +1,6 @@
-//
-//  PaymentMethodCVCell.m
-//  freeMarknad
-//
-//  Created by Daniel Mendez on 9/10/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import "PaymentMethodCVCell.h"
 
-#import "../../Models/MTLPaymentMethod.h"
+#import "../../Models/FromService/MTLPaymentMethod.h"
 
 #import <UIImageView+AFNetworking.h>
 
@@ -20,10 +12,6 @@
 @end
 
 @implementation PaymentMethodCVCell
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
 
 - (void)setData:(MTLPaymentMethod *)data {
     self.nameLabel.text = data.name;

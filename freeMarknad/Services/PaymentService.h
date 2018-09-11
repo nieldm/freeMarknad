@@ -9,5 +9,6 @@ enum PaymentServiceType {
 @interface PaymentService : NSObject
 
 + (NSString *)paymentMethod:(NSString *)token;
++ (NSString *)bank:(NSString *)token withPaymentMethod:(NSString *)paymentMethodId;
 
 @end

@@ -12,5 +12,7 @@
 
 @dynamic amount;
 @dynamic paymentMethod;
+@dynamic bankName;
+@dynamic bankId;
 
 @end

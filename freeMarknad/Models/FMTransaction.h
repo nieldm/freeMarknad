@@ -12,5 +12,7 @@
 
 @property (nonatomic) float amount;
 @property (nonatomic, retain) NSString *paymentMethod;
+@property (nonatomic, retain) NSString *bankId;
+@property (nonatomic, retain) NSString *bankName;
 
 @end
