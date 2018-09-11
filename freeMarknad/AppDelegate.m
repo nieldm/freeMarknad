@@ -14,6 +14,10 @@
 
     MasterViewController *masterViewController = [[MasterViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    [navigationController.navigationBar setBackgroundImage:[UIImage new]
+                             forBarMetrics:UIBarMetricsDefault];
+    navigationController.navigationBar.shadowImage = [UIImage new];
+    navigationController.navigationBar.translucent = YES;
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     

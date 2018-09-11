@@ -20,7 +20,9 @@
     return self;
 }
 
-- (PaymentMethodVC *)paymentMethod {
+- (PaymentMethodVC *)paymentMethodWithAmount: (NSString *)rawAmount {
+    float amount = [rawAmount floatValue];
+    self.model.amount = amount;
     PaymentMethodVC *vc = [[PaymentMethodVC alloc] init];
     PaymentMethodViewModel *viewModel = [[PaymentMethodViewModel alloc] initWithModel:self.model];
     vc.viewModel = viewModel;

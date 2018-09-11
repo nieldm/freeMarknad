@@ -20,8 +20,6 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor blueColor]];
 
-    [self.navigationController setNavigationBarHidden:TRUE];
-
     _amountTextField = [[UITextField alloc] initWithFrame:CGRectZero];
     [_amountTextField setBackgroundColor:[UIColor yellowColor]];
     [_amountTextField setKeyboardType:UIKeyboardTypeNumberPad];
@@ -48,7 +46,10 @@
     @weakify(self);
     [[_payButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton *button) {
         @strongify(self);
-        [self.navigationController pushViewController:[self.viewModel paymentMethod] animated:YES];
+        UIViewController *vc = [self.viewModel paymentMethodWithAmount:self.amountTextField.text];
+        if (vc != nil) {
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }];
     
     [RACObserve(self.viewModel, amount) subscribeNext:^(id amount) {
@@ -58,9 +59,9 @@
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:TRUE animated:animated];
 }
 
 @end

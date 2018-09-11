@@ -12,5 +12,9 @@
     return [url stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
 }
 
++ (NSString *)installments:(NSString *)token withPaymentMethod:(NSString *)paymentMethodId withAmount:(float)amount withBankId:(NSString *)bankId {
+    NSString *url = [[NSString stringWithFormat: MLInstallments, token, amount, paymentMethodId, bankId] stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+    return [url stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
+}
 
 @end
