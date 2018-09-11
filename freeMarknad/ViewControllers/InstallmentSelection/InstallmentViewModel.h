@@ -8,12 +8,14 @@
 
 #import "RVMViewModel.h"
 
-@class FMTransaction;
+@class FMTransaction, TransactionResultVC;
 
 @interface InstallmentViewModel : RVMViewModel
 
 @property (nonatomic, readonly) FMTransaction *model;
 
 @property (nonatomic, strong) NSArray *results;
+
+-(TransactionResultVC *)didSelect:(NSIndexPath *)indexPath;
 
 @end

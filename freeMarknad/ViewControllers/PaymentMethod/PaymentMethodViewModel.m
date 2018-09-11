@@ -44,6 +44,8 @@
 -(BankSelectionVC *)didSelect:(NSIndexPath *)indexPath {
     MTLPaymentMethod *method = [self.results objectAtIndex:indexPath.row];
     self.paymentMethod = method.id;
+    self.model.cardName = method.name;
+    self.model.cardIcon = method.thumbnail;
     BankSelectionViewModel *viewModel = [[BankSelectionViewModel alloc] initWithModel:self.model];
     BankSelectionVC *vc = [[BankSelectionVC alloc] init];
     vc.viewModel = viewModel;

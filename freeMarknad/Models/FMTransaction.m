@@ -14,5 +14,11 @@
 @dynamic paymentMethod;
 @dynamic bankName;
 @dynamic bankId;
+@dynamic installmentMessage;
+@dynamic installmentAmount;
+@dynamic numberOfInstallments;
+@dynamic bankIcon;
+@dynamic cardIcon;
+@dynamic cardName;
 
 @end

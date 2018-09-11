@@ -14,5 +14,12 @@
 @property (nonatomic, retain) NSString *paymentMethod;
 @property (nonatomic, retain) NSString *bankId;
 @property (nonatomic, retain) NSString *bankName;
+@property (nonatomic, retain) NSString *installmentMessage;
+@property (nonatomic) float installmentAmount;
+@property (nonatomic) float numberOfInstallments;
+@property (nonatomic, retain) NSString *bankIcon;
+@property (nonatomic, retain) NSString *cardIcon;
+@property (nonatomic, retain) NSString *cardName;
+
 
 @end
