@@ -28,9 +28,13 @@
 		B1ABCCF12141FB870046D735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCF02141FB870046D735 /* main.m */; };
 		B1ABCCFB2141FB880046D735 /* freeMarknadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCCFA2141FB880046D735 /* freeMarknadTests.m */; };
 		B1ABCD062141FB880046D735 /* freeMarknadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ABCD052141FB880046D735 /* freeMarknadUITests.m */; };
-		B1EA86C02147055F0004CCCE /* MTLPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86BF2147055F0004CCCE /* MTLPaymentMethod.m */; };
 		B1EA86C421471FBB0004CCCE /* PaymentMethodCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86C221471FBB0004CCCE /* PaymentMethodCVCell.m */; };
 		B1EA86C521471FBB0004CCCE /* PaymentMethodCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EA86C321471FBB0004CCCE /* PaymentMethodCVCell.xib */; };
+		B1EA86C821476F420004CCCE /* BankSelectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86C721476F420004CCCE /* BankSelectionViewModel.m */; };
+		B1EA86CC2147752F0004CCCE /* MTLPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86CB2147752F0004CCCE /* MTLPaymentMethod.m */; };
+		B1EA86CF214775450004CCCE /* MTLBank.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86CE214775450004CCCE /* MTLBank.m */; };
+		B1EA86D6214778020004CCCE /* BankTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EA86D4214778020004CCCE /* BankTVCell.m */; };
+		B1EA86D7214778020004CCCE /* BankTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EA86D5214778020004CCCE /* BankTVCell.xib */; };
 		B1FABA462145B06500BC1C1D /* freeMarknad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA442145B06500BC1C1D /* freeMarknad.xcdatamodeld */; };
 		B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA482145B4D300BC1C1D /* FMTransaction.m */; };
 		B1FABA4C2145C72200BC1C1D /* PaymentMethodViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FABA4B2145C72200BC1C1D /* PaymentMethodViewModel.m */; };
@@ -99,11 +103,18 @@
 		B1ABCD012141FB880046D735 /* freeMarknadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeMarknadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ABCD052141FB880046D735 /* freeMarknadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = freeMarknadUITests.m; sourceTree = "<group>"; };
 		B1ABCD072141FB880046D735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1EA86BE2147055F0004CCCE /* MTLPaymentMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTLPaymentMethod.h; sourceTree = "<group>"; };
-		B1EA86BF2147055F0004CCCE /* MTLPaymentMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTLPaymentMethod.m; sourceTree = "<group>"; };
 		B1EA86C121471FBB0004CCCE /* PaymentMethodCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethodCVCell.h; sourceTree = "<group>"; };
 		B1EA86C221471FBB0004CCCE /* PaymentMethodCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodCVCell.m; sourceTree = "<group>"; };
 		B1EA86C321471FBB0004CCCE /* PaymentMethodCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodCVCell.xib; sourceTree = "<group>"; };
+		B1EA86C621476F420004CCCE /* BankSelectionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankSelectionViewModel.h; sourceTree = "<group>"; };
+		B1EA86C721476F420004CCCE /* BankSelectionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankSelectionViewModel.m; sourceTree = "<group>"; };
+		B1EA86CA2147752F0004CCCE /* MTLPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLPaymentMethod.h; sourceTree = "<group>"; };
+		B1EA86CB2147752F0004CCCE /* MTLPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLPaymentMethod.m; sourceTree = "<group>"; };
+		B1EA86CD214775450004CCCE /* MTLBank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTLBank.h; sourceTree = "<group>"; };
+		B1EA86CE214775450004CCCE /* MTLBank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTLBank.m; sourceTree = "<group>"; };
+		B1EA86D3214778020004CCCE /* BankTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankTVCell.h; sourceTree = "<group>"; };
+		B1EA86D4214778020004CCCE /* BankTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankTVCell.m; sourceTree = "<group>"; };
+		B1EA86D5214778020004CCCE /* BankTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankTVCell.xib; sourceTree = "<group>"; };
 		B1FABA452145B06500BC1C1D /* freeMarknad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = freeMarknad.xcdatamodel; sourceTree = "<group>"; };
 		B1FABA472145B4D300BC1C1D /* FMTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMTransaction.h; sourceTree = "<group>"; };
 		B1FABA482145B4D300BC1C1D /* FMTransaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTransaction.m; sourceTree = "<group>"; };
@@ -161,8 +172,7 @@
 				B1FABA442145B06500BC1C1D /* freeMarknad.xcdatamodeld */,
 				B1FABA472145B4D300BC1C1D /* FMTransaction.h */,
 				B1FABA482145B4D300BC1C1D /* FMTransaction.m */,
-				B1EA86BE2147055F0004CCCE /* MTLPaymentMethod.h */,
-				B1EA86BF2147055F0004CCCE /* MTLPaymentMethod.m */,
+				B1EA86C92147752F0004CCCE /* FromService */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +198,11 @@
 			children = (
 				B19E243321420A37002A7BBA /* BankSelectionVC.h */,
 				B19E243421420A37002A7BBA /* BankSelectionVC.m */,
+				B1EA86C621476F420004CCCE /* BankSelectionViewModel.h */,
+				B1EA86C721476F420004CCCE /* BankSelectionViewModel.m */,
+				B1EA86D3214778020004CCCE /* BankTVCell.h */,
+				B1EA86D4214778020004CCCE /* BankTVCell.m */,
+				B1EA86D5214778020004CCCE /* BankTVCell.xib */,
 			);
 			path = BankSelection;
 			sourceTree = "<group>";
@@ -292,6 +307,17 @@
 				B1ABCD072141FB880046D735 /* Info.plist */,
 			);
 			path = freeMarknadUITests;
+			sourceTree = "<group>";
+		};
+		B1EA86C92147752F0004CCCE /* FromService */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA86CA2147752F0004CCCE /* MTLPaymentMethod.h */,
+				B1EA86CB2147752F0004CCCE /* MTLPaymentMethod.m */,
+				B1EA86CD214775450004CCCE /* MTLBank.h */,
+				B1EA86CE214775450004CCCE /* MTLBank.m */,
+			);
+			path = FromService;
 			sourceTree = "<group>";
 		};
 		B1FABA50214628BC00BC1C1D /* Services */ = {
@@ -430,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1ABCCEE2141FB870046D735 /* LaunchScreen.storyboard in Resources */,
+				B1EA86D7214778020004CCCE /* BankTVCell.xib in Resources */,
 				B1EA86C521471FBB0004CCCE /* PaymentMethodCVCell.xib in Resources */,
 				B1ABCCEB2141FB870046D735 /* Assets.xcassets in Resources */,
 			);
@@ -523,14 +550,17 @@
 				B1FABA462145B06500BC1C1D /* freeMarknad.xcdatamodeld in Sources */,
 				B14C8F8A214630B0002935E9 /* MercadoPagoAPI.m in Sources */,
 				B19E244321420A38002A7BBA /* InstallmentSelectionVC.m in Sources */,
-				B1EA86C02147055F0004CCCE /* MTLPaymentMethod.m in Sources */,
 				B19E244521420A38002A7BBA /* TransactionResultVC.m in Sources */,
 				B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */,
+				B1EA86C821476F420004CCCE /* BankSelectionViewModel.m in Sources */,
 				B1FABA53214628BC00BC1C1D /* PaymentService.m in Sources */,
 				B1ABCCE32141FB870046D735 /* AppDelegate.m in Sources */,
+				B1EA86D6214778020004CCCE /* BankTVCell.m in Sources */,
 				B18CD2DF2145A07200C1916B /* MasterViewModel.m in Sources */,
 				B14C8F8D21463236002935E9 /* NetworkConstants.m in Sources */,
+				B1EA86CC2147752F0004CCCE /* MTLPaymentMethod.m in Sources */,
 				B1FABA4C2145C72200BC1C1D /* PaymentMethodViewModel.m in Sources */,
+				B1EA86CF214775450004CCCE /* MTLBank.m in Sources */,
 				B18CD2E22145A39900C1916B /* EnterAmountViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

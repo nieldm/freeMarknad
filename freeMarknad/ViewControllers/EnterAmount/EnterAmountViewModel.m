@@ -1,11 +1,3 @@
-//
-//  EnterAmountViewModel.m
-//  freeMarknad
-//
-//  Created by Daniel Mendez on 9/9/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import "EnterAmountViewModel.h"
 
 //Models
@@ -16,12 +8,6 @@
 
 //View Models
 #import "../PaymentMethod/PaymentMethodViewModel.h"
-
-@interface EnterAmountViewModel ()
-
-@property (nonatomic, strong) FMTransaction *model;
-
-@end
 
 @implementation EnterAmountViewModel
 

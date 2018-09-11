@@ -2,13 +2,16 @@
 
 #import "MercadoPagoAPI.h"
 
-#import "NetworkConstants.h"
-
 #import <AFNetworking.h>
 
-#import "../Models/MTLPaymentMethod.h"
+#import "../Models/FromService/MTLPaymentMethod.h"
+#import "../Models/FromService/MTLBank.h"
+
+#import "PaymentService.h"
 
 @implementation MercadoPagoAPI
+
+NSString *const PublicKey = @"444a9ef5-8a6b-429f-abdf-587639155d88";
 
 + (MercadoPagoAPI *)sharedAPI
 {
@@ -24,7 +27,7 @@
 
 - (RACSignal *)paymentMethods {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        NSString *rawURL = [NSString stringWithFormat:MLPaymentMethods, @"444a9ef5-8a6b-429f-abdf-587639155d88"];
+        NSString *rawURL = [PaymentService paymentMethod:PublicKey];
         NSURL *URL                      = [NSURL URLWithString:rawURL];
         AFHTTPSessionManager *manager   = [AFHTTPSessionManager manager];
         NSURLSessionDataTask *session = [manager GET:URL.absoluteString
@@ -44,6 +47,34 @@
                     [subscriber sendError:error];
                 }
          ];
+        return [RACDisposable disposableWithBlock:^{
+            [session cancel];
+        }];
+    }];
+}
+
+- (RACSignal *)banks:(NSString *)paymentMethodId {
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSString *rawURL = [PaymentService bank:PublicKey withPaymentMethod:paymentMethodId];
+        NSURL *URL                      = [NSURL URLWithString:rawURL];
+        AFHTTPSessionManager *manager   = [AFHTTPSessionManager manager];
+        NSURLSessionDataTask *session = [manager GET:URL.absoluteString
+              parameters:nil
+                progress:nil
+                 success:^(NSURLSessionTask *task, id responseObject) {
+                     NSError *modelError = nil;
+                     NSArray *model = [MTLJSONAdapter modelsOfClass:MTLBank.class fromJSONArray:responseObject error:&modelError];
+                     if (modelError == nil) {
+                         [subscriber sendNext:model];
+                         [subscriber sendCompleted];
+                     } else {
+                         [subscriber sendError:modelError];
+                     }
+                 }
+                 failure:^(NSURLSessionTask *operation, NSError *error) {
+                     [subscriber sendError:error];
+                 }
+             ];
         return [RACDisposable disposableWithBlock:^{
             [session cancel];
         }];
