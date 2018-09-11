@@ -1,14 +1,12 @@
-//
-//  InstallmentSelectionVC.m
-//  freeMarknad
-//
-//  Created by nieldm on 9/6/18.
-//  Copyright © 2018 nieldm. All rights reserved.
-//
-
 #import "InstallmentSelectionVC.h"
 
+#import "../../Models/FromService/MTLInstallment.h"
+
+#import "InstallmentCVCell.h"
+
 @interface InstallmentSelectionVC ()
+
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
 
@@ -16,7 +14,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor yellowColor]];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.view setBackgroundColor:[UIColor redColor]];
+    
+    @weakify(self);
+    [RACObserve(self.viewModel, results) subscribeNext:^(id x) {
+        @strongify(self);
+        [self.collectionView reloadData];
+    }];
+    
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    layout.sectionInset = UIEdgeInsetsMake(50, 50, 50, 50);
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+    [collectionView setDelegate:self];
+    [collectionView setDataSource:self];
+    [collectionView setBackgroundColor:[UIColor blueColor]];
+    [collectionView registerNib:[UINib nibWithNibName:@"InstallmentCVCell" bundle:nil] forCellWithReuseIdentifier:@"Cell"];
+    [self.view addSubview:collectionView];
+    [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.width.equalTo(self.view);
+        make.height.equalTo(self.view).multipliedBy(0.5);
+    }];
+    self.collectionView = collectionView;
+}
+
+- (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    InstallmentCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    MTLInstallment *data = [self.viewModel.results objectAtIndex:indexPath.row];
+    [cell setData:data];
+    return cell;
+}
+
+- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.viewModel.results.count;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat width = collectionView.frame.size.width * 0.8;
+    CGFloat height = width / 1.586;
+    return CGSizeMake(width, height);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+//    UIViewController *vc = [self.viewModel didSelect:indexPath];
+//    if (vc != nil) {
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }
 }
 
 @end
