@@ -14,22 +14,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [self.view setBackgroundColor:[UIColor redColor]];
-    
-    @weakify(self);
-    [RACObserve(self.viewModel, results) subscribeNext:^(id x) {
-        @strongify(self);
-        [self.collectionView reloadData];
-    }];
-    
+
+    [self.view addTitleLabel:@"Seleccion el número de cuotas"];
+
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     layout.sectionInset = UIEdgeInsetsMake(50, 50, 50, 50);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     [collectionView setDelegate:self];
     [collectionView setDataSource:self];
-    [collectionView setBackgroundColor:[UIColor blueColor]];
+    [collectionView setBackgroundColor:[UIColor main]];
     [collectionView registerNib:[UINib nibWithNibName:@"InstallmentCVCell" bundle:nil] forCellWithReuseIdentifier:@"Cell"];
     [self.view addSubview:collectionView];
     [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -38,6 +32,17 @@
         make.height.equalTo(self.view).multipliedBy(0.5);
     }];
     self.collectionView = collectionView;
+
+    [self reactiveBind];
+    [self.view addGradientView];
+}
+
+- (void)reactiveBind {
+    @weakify(self);
+    [RACObserve(self.viewModel, results) subscribeNext:^(id x) {
+        @strongify(self);
+        [self.collectionView reloadData];
+    }];
 }
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {

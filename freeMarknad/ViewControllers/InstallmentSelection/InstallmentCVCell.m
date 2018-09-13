@@ -13,6 +13,12 @@
 
 @implementation InstallmentCVCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self.layer setCornerRadius:6.0];
+    [self.contentView.layer setCornerRadius:6.0];
+}
+
 - (void)setData:(MTLInstallment *)data {
     self.installmentsLabel.text = (data.numberOfInstallments > 1) ? @"cuotas" : @"cuota";
     self.topLeftLabel.text = [[NSNumber numberWithLong:data.numberOfInstallments] stringValue];
