@@ -9,6 +9,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor colorWithHexString:@"F8E13C"]];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
