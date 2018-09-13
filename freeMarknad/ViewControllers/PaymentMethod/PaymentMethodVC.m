@@ -17,30 +17,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [self.view setBackgroundColor:[UIColor redColor]];
-    
-    @weakify(self);
-    [RACObserve(self.viewModel, results) subscribeNext:^(id x) {
-        @strongify(self);
-        [self.collectionView reloadData];
-    }];
-    
+
+    [self.view addTitleLabel:@"Seleccione el método de pago"];
+
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     layout.sectionInset = UIEdgeInsetsMake(50, 50, 50, 50);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     [collectionView setDelegate:self];
     [collectionView setDataSource:self];
-    [collectionView setBackgroundColor:[UIColor blueColor]];
+    [collectionView setBackgroundColor:[UIColor main]];
     [collectionView registerNib:[UINib nibWithNibName:@"PaymentMethodCVCell" bundle:nil] forCellWithReuseIdentifier:@"Cell"];
     [self.view addSubview:collectionView];
     [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
+        make.center.equalTo(self.view);
         make.width.equalTo(self.view);
-        make.top.equalTo(self.view);
-        make.height.equalTo(self.view).multipliedBy(0.4);
+        make.height.equalTo(self.view).multipliedBy(0.5);
     }];
     self.collectionView = collectionView;
+
+    [self.view addGradientView];
+    [self reactiveBind];
+}
+
+- (void)reactiveBind {
+    @weakify(self);
+    [RACObserve(self.viewModel, results) subscribeNext:^(id x) {
+        @strongify(self);
+        [self.collectionView reloadData];
+    }];
 }
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -61,7 +66,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *vc = [self.viewModel didSelect:indexPath];
+    UIViewController *vc = (UIViewController *) [self.viewModel didSelect:indexPath];
     if (vc != nil) {
         [self.navigationController pushViewController:vc animated:YES];
     }

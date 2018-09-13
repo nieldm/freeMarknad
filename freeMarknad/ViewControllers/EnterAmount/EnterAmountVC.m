@@ -3,8 +3,6 @@
 //View Models
 #import "EnterAmountViewModel.h"
 
-#import <EZYGradientView.h>
-
 @interface EnterAmountVC ()
 
 @property (nonatomic, strong) UITextField *amountTextField;
@@ -22,17 +20,7 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor blueColor]];
 
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    titleLabel.text = @"Ingrese el monto";
-    [titleLabel setFont:[UIFont systemFontOfSize:25 weight:UIFontWeightMedium]];
-    [titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [titleLabel setTextColor:[UIColor whiteColor]];
-    [self.view addSubview:titleLabel];
-    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.width.equalTo(self.view).multipliedBy(0.7);
-        make.top.equalTo(self.view).offset(45);
-    }];
+    [self.view addTitleLabel:@"Ingrese el monto"];
 
     _amountTextField = [[UITextField alloc] initWithFrame:CGRectZero];
     [_amountTextField setBackgroundColor:[UIColor colorWithHexString:@"383B4E"]];
@@ -76,17 +64,16 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
     }];
-
-    [RACObserve(self.viewModel, amount) subscribeNext:^(id amount) {
-        @strongify(self);
-        float floatValue = [amount floatValue];
-        self.amountTextField.text = [[NSNumber numberWithFloat:floatValue] stringValue];
-    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:TRUE animated:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [_amountTextField becomeFirstResponder];
 }
 
 @end
