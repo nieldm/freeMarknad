@@ -16,7 +16,7 @@
     [self.layer insertSublayer:gradientLayer atIndex:0];
 }
 
-- (void)addTitleLabel:(NSString *)title {
+- (UILabel *)addTitleLabel:(NSString *)title {
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     titleLabel.text = title;
     [titleLabel setFont:[UIFont systemFontOfSize:25 weight:UIFontWeightMedium]];
@@ -33,6 +33,7 @@
             make.top.equalTo(self.mas_topMargin).offset(45);
         }
     }];
+    return titleLabel;
 }
 
 @end
