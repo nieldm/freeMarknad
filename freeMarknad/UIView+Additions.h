@@ -3,5 +3,6 @@
 @interface UIView (Additions)
 
 - (void)addGradientView;
+- (void)addTitleLabel:(NSString *)title;
 
 @end
