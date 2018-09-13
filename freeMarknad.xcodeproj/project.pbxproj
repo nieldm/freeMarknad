@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DF3BEB8F26C6B5D72ACBE66 /* libPods-freeMarknad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AC0B0B615258EDF08D2D78 /* libPods-freeMarknad.a */; };
+		B13E82AA2149E70F00AA5A1E /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B13E82A92149E70E00AA5A1E /* UIColor+Additions.m */; };
+		B13E82AD2149E7F700AA5A1E /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B13E82AC2149E7F700AA5A1E /* UIView+Additions.m */; };
 		B14C8F8A214630B0002935E9 /* MercadoPagoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B14C8F89214630B0002935E9 /* MercadoPagoAPI.m */; };
 		B14C8F8D21463236002935E9 /* NetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B14C8F8C21463236002935E9 /* NetworkConstants.m */; };
 		B18CD2DC21459FF300C1916B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18CD2DB21459FF300C1916B /* MasterViewController.m */; };
@@ -51,6 +53,10 @@
 		40B757CCED1BE976536EA97F /* Pods-freeMarknadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6FDC34E3282C97D0C1761149 /* Pods-freeMarknadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknadUITests/Pods-freeMarknadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		998A9999377B8621139733FF /* Pods-freeMarknad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeMarknad.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeMarknad/Pods-freeMarknad.release.xcconfig"; sourceTree = "<group>"; };
+		B13E82A82149E70E00AA5A1E /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		B13E82A92149E70E00AA5A1E /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		B13E82AB2149E7F700AA5A1E /* UIView+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		B13E82AC2149E7F700AA5A1E /* UIView+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		B14C8F88214630B0002935E9 /* MercadoPagoAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MercadoPagoAPI.h; sourceTree = "<group>"; };
 		B14C8F89214630B0002935E9 /* MercadoPagoAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MercadoPagoAPI.m; sourceTree = "<group>"; };
 		B14C8F8B21463236002935E9 /* NetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConstants.h; sourceTree = "<group>"; };
@@ -266,6 +272,10 @@
 				B1FABA50214628BC00BC1C1D /* Services */,
 				B1C0A70021482CF500AE8BAD /* NSNumber+Format.h */,
 				B1C0A70121482CF500AE8BAD /* NSNumber+Format.m */,
+				B13E82A82149E70E00AA5A1E /* UIColor+Additions.h */,
+				B13E82A92149E70E00AA5A1E /* UIColor+Additions.m */,
+				B13E82AB2149E7F700AA5A1E /* UIView+Additions.h */,
+				B13E82AC2149E7F700AA5A1E /* UIView+Additions.m */,
 			);
 			path = freeMarknad;
 			sourceTree = "<group>";
@@ -405,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1ABCCF12141FB870046D735 /* main.m in Sources */,
+				B13E82AA2149E70F00AA5A1E /* UIColor+Additions.m in Sources */,
 				B18CD2E62145A44300C1916B /* FMCoreDataStack.m in Sources */,
 				B19E244221420A38002A7BBA /* EnterAmountVC.m in Sources */,
 				B19E244421420A38002A7BBA /* PaymentMethodVC.m in Sources */,
@@ -420,6 +431,7 @@
 				B1FABA492145B4D300BC1C1D /* FMTransaction.m in Sources */,
 				B1EA86C821476F420004CCCE /* BankSelectionViewModel.m in Sources */,
 				B1FABA53214628BC00BC1C1D /* PaymentService.m in Sources */,
+				B13E82AD2149E7F700AA5A1E /* UIView+Additions.m in Sources */,
 				B1EA86DA214805010004CCCE /* InstallmentViewModel.m in Sources */,
 				B1ABCCE32141FB870046D735 /* AppDelegate.m in Sources */,
 				B1EA86D6214778020004CCCE /* BankTVCell.m in Sources */,
