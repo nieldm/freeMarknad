@@ -12,17 +12,4 @@ target 'freeMarknad' do
 
   inhibit_all_warnings!
 
-  target 'freeMarknadTests' do
-    inherit! :search_paths
-    pod 'Specta',      '~> 0.2.1'
-    pod 'Expecta',     '~> 0.2.3'
-    pod 'OCMock',      '~> 2.2.1'
-
-    inhibit_all_warnings!
-  end
-
-  target 'freeMarknadUITests' do
-    inherit! :search_paths
-  end
-
 end
