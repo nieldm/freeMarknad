@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor greenColor]];
-    
+
+    UILabel *titleLabel = [self.view addTitleLabel:@"Seleccione su banco"];
+
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     [tableView setBackgroundColor:[UIColor clearColor]];
     [tableView setRowHeight:60];
@@ -27,12 +28,18 @@
     [tableView registerNib:[UINib nibWithNibName:@"BankTVCell" bundle:nil] forCellReuseIdentifier:@"BankTVCell"];
     [self.view addSubview:tableView];
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo(self.view);
+        make.bottom.equalTo(self.view);
+        make.top.equalTo(titleLabel.mas_bottom).offset(15);
         make.width.equalTo(self.view).multipliedBy(0.95);
-        make.center.equalTo(self.view);
+        make.centerX.equalTo(self.view);
     }];
     self.tableView = tableView;
-    
+
+    [self.view addGradientView];
+    [self reactiveBind];
+}
+
+- (void)reactiveBind {
     @weakify(self);
     [RACObserve(self.viewModel, results) subscribeNext:^(id x) {
         @strongify(self);
@@ -72,7 +79,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *vc = [self.viewModel didSelect:indexPath];
+    UIViewController *vc = (UIViewController *) [self.viewModel didSelect:indexPath];
     if (vc != nil) {
         [self.navigationController pushViewController:vc animated:YES];
     }
