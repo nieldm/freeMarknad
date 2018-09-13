@@ -9,7 +9,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor colorWithHexString:@"F8E13C"]];
+    [self.view addGradientView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -14,6 +14,12 @@
 
 @implementation PaymentMethodCVCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self.layer setCornerRadius:6.0];
+    [self.contentView.layer setCornerRadius:6.0];
+}
+
 - (void)setData:(MTLPaymentMethod *)data {
     self.nameLabel.text = data.name;
     NSURL *url = [[NSURL alloc] initWithString:data.thumbnail];

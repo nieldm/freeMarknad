@@ -18,6 +18,7 @@
                              forBarMetrics:UIBarMetricsDefault];
     navigationController.navigationBar.shadowImage = [UIImage new];
     navigationController.navigationBar.translucent = YES;
+    [navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
